@@ -57,8 +57,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  screenreader test: 
-  Headers:
+  #### screenreader test: 
+  Headers: 
+  1. Gaat langs alle koppen. Zegt ook welk kop niveau de tekst is. Bv kopniveau 2
+
+  Links:
+  1. Het PS5 logo heeft geen goede alt text.
+  <img src="readme-images/logo2.png" width="187px" alt="screenshot van de PS5 games pagina.">
+  2. Bij Youtube links word er niet gezegd wat de links is. Bv in plaats van dat het Fortnite zegt, zegt het youtube link.
+     <img src="readme-images/youtube-link.png" width="187px" alt="">
+  3.'Meer laden' knop leest de screenreader niet op.
+  4. Plaatjes/cards die achter een 'Meer laden' knop verstroppen leest de screenreader op.
+  <img src="readme-images/cards.png" width="187px" alt="">
+  5. Alles wat in een carousel staat word meteen overgeslagen en niet opgelezen.
+  <img src="readme-images/carousel-games.png" width="187px" alt="">
+   <img src="readme-images/videos" width="187px" alt="">
     
 
 </details>

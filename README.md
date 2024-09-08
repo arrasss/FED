@@ -63,18 +63,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   **Links:**
   1. Het PS5 logo heeft geen goede alt text.
-  <img src="readme-images/logo2.png" width="230px" alt="screenshot van de PS5 games pagina.">
+  <img src="readme-images/logo2.png" width="375px" alt="screenshot van de PS5 games pagina.">
   
   2. Bij Youtube links word er niet gezegd wat de links is. Bv in plaats van dat het Fortnite zegt, zegt het youtube link.
-     <img src="readme-images/youtube-link.png" width="230px" alt="">
+     <img src="readme-images/youtube-link.png" width="375px" alt="">
      
   3.'Meer laden' knop leest de screenreader niet op.
   
   4. Plaatjes/cards die achter een 'Meer laden' knop verstroppen leest de screenreader op.
-  <img src="readme-images/cards.png" width="230px" alt="">
+  <img src="readme-images/cards.png" width="375px" alt="">
   
   5. Alles wat in een carousel staat word meteen overgeslagen en niet opgelezen.
-  <img src="readme-images/carousel-games.png" width="230px" alt=""> <img src="readme-images/carousel-videos.png" width="230px" alt="">
+  <img src="readme-images/carousel-games.png" width="375px" alt=""> <img src="readme-images/carousel-videos.png" width="375px" alt="">
     
 
 </details>

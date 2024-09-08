@@ -68,7 +68,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. Bij Youtube links word er niet gezegd wat de links is. Bv in plaats van dat het Fortnite zegt, zegt het youtube link.
      <img src="readme-images/youtube-link.png" width="375px" alt="">
      
-  3.'Meer laden' knop leest de screenreader niet op.
+  3. 'Meer laden' knop leest de screenreader niet op.
   
   4. Plaatjes/cards die achter een 'Meer laden' knop verstroppen leest de screenreader op.
   <img src="readme-images/cards.png" width="375px" alt="">

@@ -74,7 +74,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/cards.png" width="230px" alt="">
   
   5. Alles wat in een carousel staat word meteen overgeslagen en niet opgelezen.
-  <img src="readme-images/carousel-games.png" width="230px" alt=""> <img src="rreadme-images/carousel-videos.png" width="230px" alt="">
+  <img src="readme-images/carousel-games.png" width="230px" alt=""> <img src="readme-images/carousel-videos.png" width="230px" alt="">
     
 
 </details>

@@ -56,6 +56,22 @@ Viz - Tokyo ghoul
 ### Bevindingen
 
 Lijst met je bevindingen die in de test naar voren kwamen:
+Op allebei de pagina's hebben meerendeel van de afbeeldingen geen beschrijven of een naam. De afbeeldingen zijn genummerd.
+<img src="readme-images/header-website.jpeg" width="375px" alt="Hier zie je nummers in het lijstje staan. De nummers zijn de afbeeldingen.">
+
+De h'tjes zijn niet helemaal goed. Het begint met en h2 en springt daarna naar een h1.
+<img src="readme-images/koppen-website.jpeg" width="375px" alt="Hier zie je de h'tjes. Ze zijn niet helemaal goed genummerd. Het begint met een h2 en daarna komt de h1.">
+
+Er zitten lege classes tussen de tekst waar de reader dan op leest dat het leeg is.
+
+Dit zijn mijn notities uit de WCAG checklist:
+
+- De website gebruikt soms moeilijke woorden. 10 procent van de website bestaat uit moeilijk taalgebruik.
+- De website heeft maar 4 error meldingen in de code waarvan twee een incorrect label use is.
+- De carousel op de website heeft knoppen die je kan gebruiken als het horizontaal scrollen moeilijk gaat.
+- Alle alt attribute zijn leeg en sommige img hebben helemaal geen alt in de code.
+- Met de greyscale is het moeilijk te zien waar de carousel zich bevind.
+- Alle grijze normal-sized text hebben geen goed contrast. Ze falen voor zowel WCAG AA als WCAG AAA.
 
 </details>
 

@@ -82,15 +82,15 @@ Dit zijn mijn notities uit de WCAG checklist:
 
 ### de hele pagina:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets-paginas.jpg.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu):
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdownschets-dynamisch.jpg.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter):
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+x
 
 </details>
 
@@ -107,11 +107,11 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 samen met je groepje opstellen
 
-| Zhafira        | safae              | Robin        | Maaike        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| Carousel       | structuur website  | en ik dit    | en dan ik dat    |
-| product viewer | dit als er tijd is | nog een punt | dit wil ik zeker |
-| structuur website | ...                | ...          | ...              |
+| Zhafira           | safae             | Robin        | Maaike           |
+| ----------------- | ----------------- | ------------ | ---------------- |
+| Carousel          | structuur website | en ik dit    | en dan ik dat    |
+| product viewer    |                   | nog een punt | dit wil ik zeker |
+| structuur website |                   | ...          | ...              |
 
 ### Verslag van meeting
 

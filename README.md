@@ -82,11 +82,11 @@ Dit zijn mijn notities uit de WCAG checklist:
 
 ### de hele pagina:
 
-  <img src="readme-images/breakdownschets-paginas.jpg.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets-paginas.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu):
 
-  <img src="readme-images/breakdownschets-dynamisch.jpg.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdownschets-dynamisch.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter):
 

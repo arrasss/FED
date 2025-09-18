@@ -107,11 +107,11 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 samen met je groepje opstellen
 
-| Zhafira           | safae             | Robin        | Maaike           |
-| ----------------- | ----------------- | ------------ | ---------------- |
-| Carousel          | structuur website | en ik dit    | en dan ik dat    |
-| product viewer    |                   | nog een punt | dit wil ik zeker |
-| structuur website |                   | ...          | ...              |
+| Zhafira           | safae             | Robin       | Maaike                |
+| ----------------- | ----------------- | ----------- | --------------------- |
+| Carousel          | structuur website | Nav en html | structuur website     |
+| product viewer    |                   |             | wanneer div en sector |
+| structuur website |                   |             | 2 stylesheets?        |
 
 ### Verslag van meeting
 

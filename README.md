@@ -107,20 +107,20 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 samen met je groepje opstellen
 
-| Zhafira           | safae             | Robin       | Maaike                |
-| ----------------- | ----------------- | ----------- | --------------------- |
-| Carousel          | structuur website | Nav en html | structuur website     |
-| product viewer    |                   |             | wanneer div en sector |
-| structuur website |                   |             | 2 stylesheets?        |
+| Zhafira           | Safae             | Robin       | Maaike                 | Xar     |
+| ----------------- | ----------------- | ----------- | ---------------------- | ------- |
+| Carousel          | structuur website | Nav en html | structuur website      | Footer? |
+| product viewer    |                   |             | wanneter div en sector |         |
+| structuur website |                   |             | 2 stylesheets?         |         |
 
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- alle belangrijke koppen een h2 en alles wat een sub kopje is h3 en verder
+- id gebruiken voor de tweede pagina voor verschillende stijling
+- jump to: series --> kan er label voor gebruiken
+- other junji ito volumes & other tokyo ghoul volumes kan een h3 worden (het staat los van de andere h3 vandaar geen h4)
 
 </details>
 

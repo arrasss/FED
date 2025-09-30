@@ -1,27 +1,43 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
-
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+  /* startje */
+  --color-text: #111;
+  --color-background: #eee;
+  --color-header: white;
+  --color-menu: #2e2e2e;
+  --color-button: #fe0000;
 }
 
+@font-face {
+  font-family: "Circular";
+  src: url("https://assets.viz.com/assets/lineto-circular-book-f06e423ccda8779ebad80a0eae639794683f3a3bf8b49c41a44134ca51a7a6a2.woff");
+}
 
+@font-face {
+  font-family: "Circular-thick";
+  src: url("https://assets.viz.com/assets/lineto-circular-black-8033350c1939eb76a3734eb904b30208dcf293f74798ef38c5925fbf2352974b.woff");
+}
 
+@font-face {
+  font-family: "Circular-italic";
+  src: url("https://assets.viz.com/assets/lineto-circular-bookItalic-bd5af185235fd174d209a9ccba05814baee74be5b506ebefed8c367e96354134.woff");
+}
 
+@font-face {
+  font-family: "Circular-icons";
+  src: url("https://assets.viz.com/assets/viz-icons-29a596f5ab7aad59662e4922b856f3cadc0b599abe54cd39c12c992a5f0e3944.woff");
+}
 
 /****************/
 /* JOUW STYLING */
@@ -29,3 +45,153 @@
 
 /* jouw code */
 
+body {
+  margin: 0;
+}
+
+header {
+  background-color: var(--color-header);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2em;
+
+  padding: 1em;
+
+  font-family: "Circular-icons";
+  font-size: 1.3em;
+  padding: 0.5em;
+  border: none;
+  background-color: var(--color-header);
+}
+
+header > button {
+  order: -10;
+}
+
+header p {
+  font-family: "Circular-thick";
+  text-transform: uppercase;
+}
+
+header a img {
+  width: 75px;
+}
+
+h1 {
+  background-color: var(--color-button);
+  padding: 0.3em 1em 0em 01em;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  text-decoration: none;
+  background-color: var(--color-menu);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 20%;
+  left: 0;
+
+  translate: -100%;
+  transition: 0.2s;
+}
+
+nav button {
+  background-color: var(--color-menu);
+  color: var(--color-header);
+}
+
+nav ul {
+  font-family: "Circular-thick";
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: var(--color-header);
+  text-decoration: none;
+  line-height: 2em;
+  padding-left: 0.5em;
+}
+
+nav input {
+  margin: 1em;
+  padding-top: 1.2em;
+}
+
+.tweedenav li:nth-of-type(1) {
+  color: var(--color-button);
+}
+
+.tweedenav {
+  font-family: "Circular";
+  text-transform: capitalize;
+  font-size: 1em;
+  color: var(--color-header);
+}
+
+nav.toonMenu {
+  translate: 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--color-header);
+}
+
+/* @media (max-width: 72.5rem) {
+  header > button {
+    display: none;
+  }
+
+  nav {
+    position: static;
+    translate: 0;
+    padding: 0;
+    background: none;
+
+    display: flex;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1em;
+  }
+
+  nav input {
+    order: 1;
+  }
+
+  nav a {
+    flex-direction: column;
+    border: none;
+  }
+} */
+
+/* @media (min-width: 57em) {
+  nav a {
+    flex-direction: row;
+  }
+} */
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}

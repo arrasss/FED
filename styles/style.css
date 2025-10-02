@@ -17,7 +17,12 @@
   --color-header: white;
   --color-menu: #2e2e2e;
   --color-button: #fe0000;
+  --color-shadow: #000;
 }
+
+/*********************/
+/* FONTS */
+/*********************/
 
 @font-face {
   font-family: "Circular";
@@ -43,18 +48,20 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
-
 body {
   margin: 0;
+  font-family: "circular", sans-serif;
 }
 
+/* header styling */
 header {
   background-color: var(--color-header);
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: -0.7em;
+  margin-bottom: -0.7em;
 }
 
 header button {
@@ -62,12 +69,10 @@ header button {
   flex-direction: row;
   align-items: center;
   gap: 0.2em;
-
-  padding: 1em;
+  padding-left: 0.5em;
 
   font-family: "Circular-icons";
   font-size: 1.3em;
-  padding: 0.5em;
   border: none;
   background-color: var(--color-header);
 }
@@ -88,8 +93,10 @@ header a img {
 h1 {
   background-color: var(--color-button);
   padding: 0.3em 1em 0em 01em;
+  margin: 0;
 }
 
+/* nav styling */
 nav {
   display: flex;
   flex-direction: column;
@@ -97,7 +104,7 @@ nav {
 
   text-decoration: none;
   background-color: var(--color-menu);
-  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.5em var(--color-shadow);
 
   position: fixed;
   top: 0;
@@ -105,13 +112,15 @@ nav {
   right: 20%;
   left: 0;
 
-  translate: -100%;
+  translate: -150%;
   transition: 0.2s;
 }
 
 nav button {
   background-color: var(--color-menu);
   color: var(--color-header);
+
+  padding: 1em;
 }
 
 nav ul {
@@ -140,7 +149,7 @@ nav input {
   color: var(--color-header);
 }
 
-nav.toonMenu {
+nav.menuZien {
   translate: 0;
 }
 
@@ -190,8 +199,4 @@ nav li a {
 
 ul {
   list-style: none;
-}
-
-img {
-  width: 100%;
 }

@@ -9,9 +9,9 @@ menuButton.addEventListener("click", openMenu);
 sluitButton.addEventListener("click", sluitMenu);
 
 function openMenu() {
-  hetMenu.classList.add("toonMenu");
+  hetMenu.classList.add("menuZien");
 }
 
 function sluitMenu() {
-  hetMenu.classList.remove("toonMenu");
+  hetMenu.classList.remove("menuZien");
 }

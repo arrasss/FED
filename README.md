@@ -135,24 +135,23 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 tips voor een carousel
 
-
 ### Agenda voor meeting
 
 samen met je groepje opstellen
 
-| Zhafira           | Safae             | Robin       | Maaike                 | Xar     |
-| ----------------- | ----------------- | ----------- | ---------------------- | ------- |
-|                   | class             | -           | -                      | -       |
-|                   | section en article|             | -                      |         |
-|                   |                   |             | -                      |         |
+| Zhafira | Safae              | Robin | Maaike | Xar |
+| ------- | ------------------ | ----- | ------ | --- |
+|         | class              | -     | -      | -   |
+|         | section en article |       | -      |     |
+|         |                    |       | -      |     |
 
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
+- class kan veranderd worden in ul:nth-of-type
+- grid-template-rows -->
+- list-style:none; haal je de puntjes weg padding: 0; om de wit regels dan weg te halen
 - ...
 
 </details>

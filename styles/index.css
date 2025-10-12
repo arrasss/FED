@@ -1,67 +1,260 @@
-img {
-  width: 100%;
-}
-
-h2 {
-  font-family: "circular-thick";
-  text-transform: uppercase;
-}
-
 /****************/
 /*   SECTION 1  */
 /****************/
 
 section:nth-of-type(1) {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-section img:nth-of-type(1) {
+section:nth-of-type(1) img {
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-section ul:nth-of-type(1) {
+section:nth-of-type(1) ul {
   grid-row-start: 2;
   grid-row-end: 3;
 
-  /* display: grid; */
-  grid-template-columns: 8em 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: grid;
+
+  grid-template-columns: max-content max-content max-content;
+  grid-template-rows: max-content max-content;
+
+  margin-top: 1.8em;
+  margin-bottom: 0;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
 }
 
-section p:nth-of-type(1) {
+section:nth-of-type(1) li {
+  margin: 0 1em 1em 0;
+}
+
+section:nth-of-type(1) li:nth-of-type(1) {
+  font-family: "circular-thick";
+  background-color: var(--color-accent2);
+
+  padding: 0.2em 0.4em 0.2em 0.4em;
+}
+
+section:nth-of-type(1) h2 {
+  font-size: 2.5em;
+  color: var(--color-menu);
+
+  padding-left: 0.5em;
+  margin: 0.5em 0 0.2em 0;
+}
+
+section:nth-of-type(1) p {
+  margin: 0;
+  color: var(--color-text);
+}
+
+section:nth-of-type(1) p:nth-of-type(2) {
+  font-family: "Circular-thick";
+  font-size: 1.7em;
+
+  padding-left: 0.5em;
+}
+
+section:nth-of-type(1) p:nth-of-type(1) {
   grid-row-start: 3;
   grid-row-end: 4;
+
+  padding-left: 1.2em;
+
+  text-decoration: none;
+  color: var(--color-accent3);
+  margin: 0;
 }
 
-section a:nth-of-type(1) {
+section:nth-of-type(1) p a {
+  color: var(--color-accent3);
+}
+
+section:nth-of-type(1) p a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+section:nth-of-type(1) a {
   font-family: "Circular";
   text-decoration: none;
   color: var(--color-text);
 }
 
-section li:nth-of-type(6) {
-  grid-column-start: 1;
-  grid-column-end: 2;
+section:nth-of-type(1) ul li:nth-of-type(1) a {
+  font-family: "Circular-thick";
+  text-decoration: none;
+}
+
+section details {
+  margin: 1.5em 0 1.5em 0;
+  padding: 0 1.2em 0 1.2em;
+}
+
+section details summary {
+  font-family: "Circular";
+  font-size: 1.25em;
+  cursor: pointer;
+  list-style: none;
+}
+
+section details summary:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* Sanne heeft deze code getypt */
+summary::before {
+  content: "More about ";
+}
+
+details[open] summary::before {
+  content: "Less about ";
+}
+
+summary::after {
+  content: "⏷";
+  display: inline-block;
+  margin-left: 0.25em;
+}
+
+section details p {
+  color: var(--color-text);
+}
+
+section details p:last-of-type {
+  color: var(--color-text);
+  font-family: "Circular";
 }
 
 /****************/
 /*   CAROUSEL   */
 /****************/
 
-section ul:nth-of-type(2) {
+main section:nth-of-type(2) ul {
+  background-color: var(--color-menu);
+  color: var(--color-background);
+
   display: flex;
-  background-color: black;
+  /* gap: 1em; */
+  overflow: auto;
+
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+
+  overscroll-behavior-x: contain;
+
+  anchor-name: --carousel;
 }
 
-/* section ul li {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-} */
+main section:nth-of-type(2) ul {
+  scroll-marker-group: after;
 
-/* section ul li img {
-  grid-column-start: 1;
-  grid-column-end: -1;
-} */
+  &::scroll-marker-group {
+    position: fixed;
+    position-anchor: --carousel;
+    position-area: block-end;
+    position-visibility: always;
+    margin: 10px;
+
+    display: grid;
+    grid-auto-columns: 20px;
+    grid-auto-flow: column;
+    gap: 10px;
+  }
+
+  > li {
+    &::scroll-marker {
+      content: "" / attr(data-label);
+
+      width: 1em;
+      height: 0.5em;
+      background-color: var(--color-carousel);
+    }
+
+    &::scroll-marker:target-current {
+      background: var(--color-accent);
+    }
+  }
+}
+
+main section:nth-of-type(2) ul {
+  &::scroll-button(*) {
+    position: fixed;
+    border: none;
+    cursor: pointer;
+
+    position-anchor: --carousel;
+
+    position-visibility: always;
+    font-family: "Material Symbols Outlined";
+  }
+
+  &::scroll-button(right) {
+    position-area: bottom center;
+    justify-self: end;
+    content: "⏵" / "Next";
+  }
+
+  &::scroll-button(left) {
+    position-area: bottom center;
+    justify-self: start;
+    content: "⏴" / "Previous";
+  }
+}
+
+main section:nth-of-type(2) li {
+  display: grid;
+  grid-template-rows: max-content max-content max-content 1fr 1fr;
+  grid-template-columns: 1fr;
+
+  flex-basis: 23em;
+  aspect-ratio: 1/1;
+
+  flex-shrink: 0;
+
+  scroll-snap-align: center;
+}
+
+section:nth-of-type(2) h2 {
+  font-size: 1.25em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+
+section:nth-of-type(2) p {
+  margin-top: 0;
+  font-size: 1em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+
+section:nth-of-type(2) img {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+section:nth-of-type(2) a,
+section:nth-of-type(2) button {
+  font-family: "Circular-thick";
+  font-size: 1em;
+
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-background);
+  background-color: var(--color-accent);
+
+  padding: 0.9em;
+
+  justify-items: center;
+}
+
+section:nth-of-type(2) section {
+  display: flex;
+  gap: 1em;
+  padding-left: 1.5em;
+}

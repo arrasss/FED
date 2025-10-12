@@ -12,17 +12,20 @@
 /*********************/
 :root {
   /* startje */
-  --color-text: #111;
-  --color-background: #eee;
-  --color-header: white;
+  --color-text: #2e2e2e;
+  --color-background: #f2f2f2;
+  --color-header: #f2f2f2;
   --color-menu: #2e2e2e;
-  --color-button: #fe0000;
+  --color-accent: #fe0000;
   --color-shadow: #000;
+  --color-accent2: #ffce58;
+  --color-accent3: #953737;
+  --color-carousel: #999;
 }
 
-/*********************/
+/*********/
 /* FONTS */
-/*********************/
+/*********/
 
 @font-face {
   font-family: "Circular";
@@ -50,7 +53,7 @@
 
 body {
   margin: 0;
-  font-family: "circular", sans-serif;
+  background-color: var(--color-background);
 }
 
 /* header styling */
@@ -91,7 +94,7 @@ header a img {
 }
 
 h1 {
-  background-color: var(--color-button);
+  background-color: var(--color-accent);
   padding: 0.3em 1em 0em 01em;
   margin: 0;
 }
@@ -138,11 +141,11 @@ nav input {
   padding-top: 1.2em;
 }
 
-.tweedenav li:nth-of-type(1) {
-  color: var(--color-button);
+ul:nth-of-type(2) li:nth-of-type(1) {
+  color: var(--color-accent);
 }
 
-.tweedenav {
+ul:nth-of-type(2) {
   font-family: "Circular";
   text-transform: capitalize;
   font-size: 1em;
@@ -199,4 +202,18 @@ nav li a {
 
 ul {
   list-style: none;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-family: "circular-thick";
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Circular";
 }

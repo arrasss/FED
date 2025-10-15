@@ -19,8 +19,10 @@
   --color-accent: #fe0000;
   --color-shadow: #000;
   --color-accent2: #ffce58;
-  --color-accent3: #953737;
+  --color-accent3: #a40000;
   --color-carousel: #999;
+  --color-white: #fff;
+  --color-text-footer: #bfbfbf;
 }
 
 /*********/
@@ -207,11 +209,6 @@ ul {
 
 img {
   width: 100%;
-}
-
-h2 {
-  font-family: "circular-thick";
-  text-transform: uppercase;
 }
 
 p {

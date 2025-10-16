@@ -484,6 +484,7 @@ section:nth-of-type(4) li a {
   grid-template-rows: max-content max-content;
 
   text-decoration: none;
+  background-color: var(--color-text);
 }
 
 section:nth-of-type(4) a h3 {
@@ -494,13 +495,12 @@ section:nth-of-type(4) a h3 {
   font-size: 1em;
   text-align: center;
   color: var(--color-background);
-  background-color: var(--color-text);
 
   margin: 0;
   padding: 0.8em 0.5em 0.8em 0.5em;
 }
 
-section:nth-of-type(4) a h3:hover {
+section:nth-of-type(4) li a:hover {
   background-color: var(--color-accent3);
 }
 

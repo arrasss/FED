@@ -191,9 +191,9 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
+- input type submit --- button
+- input en button in een form
+- view width voor carousel
 - ...
 
 </details>

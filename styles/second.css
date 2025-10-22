@@ -1,0 +1,435 @@
+/****************/
+/*   SECTION 1  */
+/****************/
+
+main > section:nth-of-type(1) {
+  display: grid;
+}
+
+section:nth-of-type(1) img {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+section:nth-of-type(1) ul {
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(min(7em, 100%), 1fr));
+  grid-template-rows: max-content max-content;
+
+  margin-top: 1.8em;
+  margin-bottom: 0;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+}
+
+section:nth-of-type(1) li {
+  margin: 0 0.5em 0.5em 0;
+}
+
+section:nth-of-type(1) li:nth-of-type(1),
+section:nth-of-type(1) li:nth-of-type(2) {
+  background-color: var(--color-accent2);
+
+  padding: 0.2em 0.4em 0.2em 0.4em;
+
+  transition: 0.3s;
+}
+
+section:nth-of-type(1) li:nth-of-type(1):hover,
+section:nth-of-type(1) li:nth-of-type(2):hover {
+  background-color: var(--color-accent4);
+  text-decoration: underline;
+  border-radius: 0.3em;
+}
+
+section:nth-of-type(1) h2 {
+  font-size: 2.5em;
+  font-family: "circular-thick";
+  text-transform: uppercase;
+  color: var(--color-text);
+
+  padding-left: 0.4em;
+  margin: 0.4em 0 0 0;
+}
+
+section:nth-of-type(1) p {
+  color: var(--color-text);
+}
+
+section:nth-of-type(1) > p:nth-of-type(2) {
+  font-family: "Circular-thick";
+  font-size: 1.7em;
+
+  padding: 0 0.5em 0 0.5em;
+  margin: 0;
+}
+
+main > section:nth-of-type(1) > p:nth-of-type(1) {
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  padding-top: 0.5em;
+  padding-left: 1.2em;
+
+  text-decoration: none;
+  color: var(--color-accent3);
+  margin: 0;
+}
+
+section:nth-of-type(1) p a {
+  color: var(--color-accent3);
+}
+
+section:nth-of-type(1) p a:hover {
+  color: var(--color-accent5);
+  text-decoration: underline;
+}
+
+section:nth-of-type(1) a {
+  font-family: "Circular";
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+section:nth-of-type(1) li a:hover {
+  text-decoration: underline;
+  color: var(--color-accent3);
+}
+
+section:nth-of-type(1) ul li:nth-of-type(1) a,
+section:nth-of-type(1) ul li:nth-of-type(2) a {
+  font-family: "Circular-thick";
+  text-decoration: none;
+  color: var(--color-text2);
+}
+
+section:nth-of-type(1) > p:nth-of-type(3) {
+  font-family: "Circular";
+  font-size: 1.25em;
+
+  padding-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+section details {
+  margin: 1em 0 1em 0;
+  padding: 0 1.2em 0 1.2em;
+}
+
+section details summary {
+  font-family: "Circular";
+  color: var(--color-text);
+  font-size: 1.25em;
+  cursor: pointer;
+  list-style: none;
+}
+
+section details summary:hover {
+  color: var(--color-accent3);
+  text-decoration: underline;
+}
+
+/* Sanne heeft deze code getypt */
+main summary::before {
+  content: "More about ";
+}
+
+main details[open] summary::before {
+  content: "Less about ";
+}
+
+main summary::after {
+  content: "⏷";
+  display: inline-block;
+  margin-left: 0.25em;
+}
+
+main details[open] summary::after {
+  content: "⏶";
+}
+
+section details p {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+section details p:last-of-type {
+  font-size: 1em;
+}
+
+section:nth-of-type(1) section {
+  display: flex;
+  background-color: var(--color-background3);
+  cursor: pointer;
+
+  padding-left: 1em;
+  margin: 1em 1em 0 1em;
+}
+
+section:nth-of-type(1) section:hover {
+  background-color: var(--color-accent3);
+}
+
+section:nth-of-type(1) section p {
+  font-family: "Circular-icons";
+  font-size: 1.25em;
+  color: var(--color-text3);
+}
+
+section:nth-of-type(1) section button {
+  font-family: "Circular-thick";
+  font-size: 1.25em;
+  color: var(--color-text3);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/****************/
+/*   SECTION 2  */
+/****************/
+
+/* titel en tekst */
+main > section:nth-of-type(2) {
+  padding: 5em 4.5% 3.75em 4.5%;
+
+  display: grid;
+  grid-template-rows: max-content 20em max-content max-content max-content max-content max-content;
+
+  color: var(--color-text);
+}
+
+section:nth-of-type(2) h2:nth-of-type(1),
+section:nth-of-type(2) h3 {
+  font-family: "circular-thick";
+  font-size: 1.75em;
+
+  margin: 0;
+}
+
+section:nth-of-type(2) > a:nth-of-type(1) {
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  display: grid;
+
+  background-color: var(--color-white);
+
+  margin: 1em 0 1em 0;
+}
+
+section:nth-of-type(2) > a img {
+  justify-self: center;
+  align-self: center;
+  width: 11em;
+
+  transition: 0.5s;
+}
+
+section:nth-of-type(2) > a img:hover {
+  width: 11.5em;
+}
+
+section:nth-of-type(2) > a:nth-of-type(2) {
+  font-family: "Circular-thick";
+  font-size: 1.25em;
+  text-decoration: none;
+  color: var(--color-text3);
+  background-color: var(--color-accent);
+
+  text-align: center;
+  width: 45%;
+  padding: 0.5em 0.9em 0.5em 0.9em;
+  margin: 0.5em 0 0 0.5em;
+}
+
+section:nth-of-type(2) a:nth-of-type(2):hover {
+  background-color: var(--color-accent5);
+}
+
+/* kaartjes */
+section:nth-of-type(2) h2:nth-of-type(2) {
+  font-family: "Circular";
+  font-size: 1.75em;
+
+  margin-top: 2.5em;
+}
+
+main section:nth-of-type(2) ul {
+  grid-row-start: 7;
+  grid-row-end: 8;
+
+  padding-right: 1em;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0.8em;
+}
+
+main section:nth-of-type(2) li a {
+  display: grid;
+  grid-template-rows: max-content 2em 1fr;
+  grid-template-columns: 1fr max-content;
+
+  font-family: "Circular";
+  font-size: 1em;
+  text-decoration: none;
+
+  background-color: var(--color-white);
+}
+
+section:nth-of-type(2) li a img {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+
+  width: 6em;
+  padding: 1.5em 0.5em 1em 0.5em;
+
+  transition: 0.2s;
+}
+
+section:nth-of-type(2) li a img:hover {
+  width: 6.5em;
+}
+
+section:nth-of-type(2) li:nth-of-type(2) a img {
+  width: 5.5em;
+}
+
+section:nth-of-type(2) li:nth-of-type(2) a img:hover {
+  width: 6em;
+}
+
+section:nth-of-type(2) li a h4 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  color: var(--color-text);
+  padding: 0 1em 1em 1em;
+  margin: 0;
+}
+
+section:nth-of-type(2) ul li a p:nth-of-type(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  color: var(--color-accent3);
+  padding-left: 1em;
+  margin: 0 0 0.5em 0;
+}
+
+section:nth-of-type(2) li a p:nth-of-type(2) {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  align-self: start;
+  justify-self: end;
+  z-index: 1;
+  padding: 0.5em;
+  margin: 0;
+
+  color: var(--color-background);
+  background-color: var(--color-text);
+}
+
+/* see all link */
+section:nth-of-type(2) > a:last-of-type {
+  font-family: "Circular-thick";
+  font-size: 1.25em;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+section:nth-of-type(2) > a:last-of-type:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/****************/
+/*   SECTION 3  */
+/****************/
+
+section:nth-of-type(3) {
+  display: grid;
+  grid-template-rows: 7em 30em;
+  grid-template-columns: 100%;
+  overflow: hidden;
+}
+
+section:nth-of-type(3) h2 {
+  font-family: "Circular";
+  color: var(--color-text);
+  font-size: 1.75em;
+  line-height: 1;
+
+  padding: 1.8em 0.5em 0 0.5em;
+  margin: 0;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  z-index: 1;
+}
+
+section:nth-of-type(3) ul {
+  padding: 1em;
+
+  display: grid;
+  grid-template-rows: max-content max-content;
+  grid-template-columns: repeat(auto-fit, minmax(min(7em, 100%), 1fr));
+  gap: 1em;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  z-index: 1;
+}
+
+section:nth-of-type(3) li a {
+  display: grid;
+  grid-template-rows: max-content max-content;
+
+  text-decoration: none;
+  background-color: var(--color-text);
+  margin-top: 1em;
+}
+
+section:nth-of-type(3) a h3 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  font-family: "Circular";
+  font-size: 1em;
+  text-align: center;
+  color: var(--color-background);
+}
+
+section:nth-of-type(3) li a:hover {
+  background-color: var(--color-accent3);
+}
+
+section:nth-of-type(3) picture {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+section:nth-of-type(3) picture img {
+  object-fit: cover;
+  width: auto;
+}

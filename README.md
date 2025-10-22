@@ -235,6 +235,8 @@ Nb. Vermeld de bronnen ook in je code.
 4. https://css-tricks.com/snippets/css/complete-guide-grid/
 5. https://codepen.io/arrasss/pen/GgovrdP?editors=1100
 6. https://codepen.io/arrasss/pen/EaPWGLY?editors=1100
+7. https://codepen.io/arrasss/pen/dPGogqZ
+8. https://codepen.io/arrasss/pen/vENoqYO
 
 
 </details>

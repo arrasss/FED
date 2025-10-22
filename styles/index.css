@@ -2,7 +2,7 @@
 /*   SECTION 1  */
 /****************/
 
-section:nth-of-type(1) {
+main section:nth-of-type(1) {
   display: grid;
 }
 
@@ -35,13 +35,21 @@ section:nth-of-type(1) li:nth-of-type(1) {
   background-color: var(--color-accent2);
 
   padding: 0.2em 0.4em 0.2em 0.4em;
+
+  transition: 0.3s;
+}
+
+section:nth-of-type(1) li:nth-of-type(1):hover {
+  background-color: var(--color-accent4);
+  text-decoration: underline;
+  border-radius: 0.3em;
 }
 
 section:nth-of-type(1) h2 {
   font-size: 2.5em;
   font-family: "circular-thick";
   text-transform: uppercase;
-  color: var(--color-menu);
+  color: var(--color-text);
 
   padding-left: 0.4em;
   margin: 0.4em 0 0 0;
@@ -76,7 +84,7 @@ section:nth-of-type(1) p a {
 }
 
 section:nth-of-type(1) p a:hover {
-  color: var(--color-accent);
+  color: var(--color-accent5);
   text-decoration: underline;
 }
 
@@ -86,9 +94,15 @@ section:nth-of-type(1) a {
   color: var(--color-text);
 }
 
+section:nth-of-type(1) li a:hover {
+  text-decoration: underline;
+  color: var(--color-accent3);
+}
+
 section:nth-of-type(1) ul li:nth-of-type(1) a {
   font-family: "Circular-thick";
   text-decoration: none;
+  color: var(--color-text2);
 }
 
 section details {
@@ -98,32 +112,33 @@ section details {
 
 section details summary {
   font-family: "Circular";
+  color: var(--color-text);
   font-size: 1.25em;
   cursor: pointer;
   list-style: none;
 }
 
 section details summary:hover {
-  color: var(--color-accent);
+  color: var(--color-accent3);
   text-decoration: underline;
 }
 
 /* Sanne heeft deze code getypt */
-summary::before {
+main summary::before {
   content: "More about ";
 }
 
-details[open] summary::before {
+main details[open] summary::before {
   content: "Less about ";
 }
 
-summary::after {
+main summary::after {
   content: "⏷";
   display: inline-block;
   margin-left: 0.25em;
 }
 
-details[open] summary::after {
+main details[open] summary::after {
   content: "⏶";
 }
 
@@ -134,12 +149,6 @@ section details p {
 
 section details p:last-of-type {
   font-size: 1em;
-  line-height: 1.5em;
-}
-
-section details a:last-of-type:hover {
-  color: var(--color-accent);
-  text-decoration: underline;
 }
 
 /****************/
@@ -147,8 +156,8 @@ section details a:last-of-type:hover {
 /****************/
 
 main section:nth-of-type(2) ul {
-  background-color: var(--color-menu);
-  color: var(--color-background);
+  background-color: var(--color-carousel);
+  color: var(--color-carousel-text);
 
   display: flex;
   overflow: auto;
@@ -187,11 +196,11 @@ main section:nth-of-type(2) ul {
 
       width: 1.7em;
       height: 0.5em;
-      background-color: var(--color-carousel);
+      background-color: var(--color-carousel-marker);
     }
 
     &::scroll-marker:target-current {
-      background: var(--color-accent3);
+      background: var(--color-accent4);
     }
   }
 }
@@ -226,10 +235,10 @@ main section:nth-of-type(2) ul {
 
 main section:nth-of-type(2) li {
   display: grid;
-  grid-template-rows: min-content max-content max-content 1fr 1fr 1em;
+  grid-template-rows: min-content max-content max-content 1fr 1fr 1.5em;
   grid-template-columns: 1fr;
 
-  flex-basis: 95vw;
+  flex-basis: 100vw;
   aspect-ratio: 1/1;
 
   flex-shrink: 0;
@@ -257,8 +266,8 @@ section:nth-of-type(2) img {
   grid-row-end: 2;
 }
 
-section:nth-of-type(2) a,
-section:nth-of-type(2) button {
+main section:nth-of-type(2) a,
+main section:nth-of-type(2) button {
   font-family: "Circular-thick";
   font-size: 1em;
 
@@ -266,24 +275,24 @@ section:nth-of-type(2) button {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  color: var(--color-background);
+  color: var(--color-text3);
   background-color: var(--color-accent);
 
-  width: 40%;
   padding: 0.9em;
 
   justify-items: center;
+  align-self: center;
 }
 
-section:nth-of-type(2) a:hover,
-section:nth-of-type(2) button:hover {
-  background-color: var(--color-accent3);
+main section:nth-of-type(2) a:hover,
+main section:nth-of-type(2) button:hover {
+  background-color: var(--color-accent5);
 }
 
 section:nth-of-type(2) section {
   display: flex;
   gap: 1em;
-  padding-left: 1.5em;
+  padding-left: 1em;
 }
 
 /****************/
@@ -335,7 +344,7 @@ section:nth-of-type(3) > a:nth-of-type(2) {
   font-family: "Circular-thick";
   font-size: 1.25em;
   text-decoration: none;
-  color: var(--color-background);
+  color: var(--color-text3);
   background-color: var(--color-accent);
 
   text-align: center;
@@ -345,7 +354,7 @@ section:nth-of-type(3) > a:nth-of-type(2) {
 }
 
 section:nth-of-type(3) a:nth-of-type(2):hover {
-  background-color: var(--color-accent3);
+  background-color: var(--color-accent5);
 }
 
 /* kaartjes */
@@ -466,6 +475,7 @@ section:nth-of-type(4) {
 
 section:nth-of-type(4) h2 {
   font-family: "Circular";
+  color: var(--color-text);
   font-size: 1.75em;
   line-height: 1;
 
@@ -517,11 +527,14 @@ section:nth-of-type(4) li a:hover {
   background-color: var(--color-accent3);
 }
 
-section:nth-of-type(4) > img {
+section:nth-of-type(4) picture {
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: -1;
+}
+
+section:nth-of-type(4) picture img {
   object-fit: cover;
   width: auto;
 }

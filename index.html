@@ -19,17 +19,23 @@
         <h1><img src="images/viz-logo-white.png" alt="Viz"
           /></h1>
       </a>
-	    <button> s <p>Menu</p></button>
+
+      <section>
+	      <button aria-hidden="true">s</button>
+        <p>Menu</p>
+      </section>
 
 	    <nav>
-		    <button>v</button>
+		    <button aria-label="close">v</button>
 		    <ul>
-			   <li><details><summary>Manga & Books</summary></details></li>
+			   <li>Manga & Books</li>
 			    <li>Anime</li>
 			    <li>Calender</li>
 			    <li>More</li>
 		    </ul>
-		    <input type="search">
+        <form action="">
+		      <input type="search">
+        </form>
 		    <ul>
 			   <li>Manga & Anime Favorites</li>
 			   <li><a href="#">Naruto</a></li>
@@ -282,11 +288,14 @@
           </li>
         </ul>
         
-        <img 
-        aria-hidden="true"
-        src="images/background-image.jpg"
-        alt="A collage of black and white manga pages"
-        />
+        <!-- heb dit van dlo -->
+        <picture><source media="(prefers-color-scheme:dark)" srcset="images/background-image-black.jpg" > 
+         <img 
+          aria-hidden="true"
+          src="images/background-image.jpg"
+          alt="A collage of black and white manga pages"
+          />
+        </picture> 
       </section>
     </main>
 

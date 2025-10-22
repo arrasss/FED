@@ -12,29 +12,30 @@
 
     <link rel="icon" type="image/svg+xml" href="images/favicon.png" />
   </head>
-  
+
   <body>
     <header>
       <a href="#">
         <h1><img src="images/viz-logo-white.png" alt="Viz" /></h1>
       </a>
-      <button>
-        s
+
+      <section>
+        <button aria-hidden="true">s</button>
         <p>Menu</p>
-      </button>
+      </section>
 
       <nav>
-        <button>v</button>
+        <button aria-label="close">v</button>
         <ul>
-          <li>
-            <details><summary>Manga & Books</summary></details>
-          </li>
+          <li>Manga & Books</li>
           <li>Anime</li>
           <li>Calender</li>
           <li>More</li>
         </ul>
-        <input type="search" />
-        <ul class="tweedenav">
+        <form action="">
+          <input type="search" />
+        </form>
+        <ul>
           <li>Manga & Anime Favorites</li>
           <li><a href="#">Naruto</a></li>
           <li><a href="#">Pokémon</a></li>

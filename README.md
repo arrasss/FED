@@ -229,8 +229,12 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 Nb. ChatGpT en andere AI horen er ook bij.
 Nb. Vermeld de bronnen ook in je code.
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://webaim.org/resources/contrastchecker/
+2. https://nekocalc.com/px-to-em-converter
+3. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+4. https://css-tricks.com/snippets/css/complete-guide-grid/
+5. https://codepen.io/arrasss/pen/GgovrdP?editors=1100
+6. https://codepen.io/arrasss/pen/EaPWGLY?editors=1100
+
 
 </details>

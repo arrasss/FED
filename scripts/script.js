@@ -1,7 +1,7 @@
 // JavaScript Document
 console.log("hi");
 
-let menuButton = document.querySelector("header button");
+let menuButton = document.querySelector("header section");
 let hetMenu = document.querySelector("header nav");
 let sluitButton = document.querySelector("header nav button");
 

@@ -27,13 +27,26 @@
       <nav>
         <button aria-label="close">v</button>
         <ul>
-          <li>Manga & Books</li>
-          <li>Anime</li>
-          <li>Calender</li>
-          <li>More</li>
+          <li>
+            <details>
+              <summary>Manga & Books</summary>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Anime</summary>
+            </details>
+          </li>
+          <li><a href="#">Calender</a></li>
+          <li>
+            <details>
+              <summary>More</summary>
+            </details>
+          </li>
         </ul>
         <form action="">
-          <input type="search" />
+          <input type="search" placeholder="Author, title, character"/>
+          <button type="submit" aria-label="search">i</button>
         </form>
         <ul>
           <li>Manga & Anime Favorites</li>
@@ -77,44 +90,50 @@
         <p>Created by Sui Ishida</p>
         <details>
           <summary>Tokyo Ghoul</summary>
-          <p>
-            Ken Kaneki is an ordinary college student until a violent encounter 
-            turns him into the first half-human, half-Ghoul hybrid. Now he must 
-            survive Ghoul turf wars, learn more about Ghoul society and master 
-            his new powers.
-          </p>
-          <p>
-            <a href="#">Sui Ishida</a> was born in Fukuoka, Japan. He is the 
-            author of the immensely popular Tokyo Ghoul and several Tokyo Ghoul 
-            one-shots, including one that won him second place in the 
-            Weekly Young Jump 113th Grand Prix award in 2010.
-          </p>
+          <section>
+            <p>
+              Ken Kaneki is an ordinary college student until a violent encounter 
+              turns him into the first half-human, half-Ghoul hybrid. Now he must 
+              survive Ghoul turf wars, learn more about Ghoul society and master 
+              his new powers.
+            </p>
+            <p>
+              <a href="#">Sui Ishida</a> was born in Fukuoka, Japan. He is the 
+              author of the immensely popular Tokyo Ghoul and several Tokyo Ghoul 
+              one-shots, including one that won him second place in the 
+              Weekly Young Jump 113th Grand Prix award in 2010.
+            </p>
+          </section>
         </details>
         <section>
-          <p aria-hidden="true">n</p>
-          <button>Tokyo Ghoul: re trailer</button>
-        </section>
-        <section>
-          <p aria-hidden="true">n</p>
-          <button>Tokyo Ghoul trailer</button> 
+          <section>
+            <p aria-hidden="true">n</p>
+            <button>Tokyo Ghoul: re trailer</button>
+          </section>
+          <section>
+           <p aria-hidden="true">n</p>
+           <button>Tokyo Ghoul trailer</button> 
+          </section>
         </section>
 
       </section>
       <section>
         <h2>Read Tokyo Ghoul manga and books</h2>
-        <h3>Tokyo Ghoul:re Illustrations: zakki</h3>
-        <p>
-          Tokyo Ghoul:re Illustrations: zakki features artwork and behind-the-scenes notes, 
-          commentary and a Q&A from Tokyo Ghoul creator Sui Ishida. 
-          Discover the creative process behind the popular series in gloriously ghoulish full color.
-        </p>
-        <a href="#">
-         <img
-            src="images/image-artbook.jpg"
-            alt="a manga cover of an illustrated boy and girl laying down in a field of flowers"
-          />
-        </a>
-        <a href="#">Buy now</a>
+        <section>
+          <h3>Tokyo Ghoul:re Illustrations: zakki</h3>
+          <p>
+            Tokyo Ghoul:re Illustrations: zakki features artwork and behind-the-scenes notes, 
+            commentary and a Q&A from Tokyo Ghoul creator Sui Ishida. 
+            Discover the creative process behind the popular series in gloriously ghoulish full color.
+          </p>
+          <a href="#">
+          <img
+              src="images/image-artbook.jpg"
+              alt="a manga cover of an illustrated boy and girl laying down in a field of flowers"
+            />
+          </a>
+          <a href="#">Buy now</a>
+        </section>
 
         <h2>Other Tokyo Ghoul volumes</h4>
         <ul>
@@ -219,6 +238,7 @@
       <section>
         <h2>Get the latest manga & anime news!</h2>
         <p>You’ll never miss a beat when you subscribe to our newsletter.</p>
+        <img src="images/newsletter-image.png" alt="">
         <form action="">
           <input type="email" placeholder="Enter your email address">
           <button type="submit">Sign Up</button>

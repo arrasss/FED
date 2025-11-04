@@ -16,37 +16,49 @@
   <body>
     <header>
       <a href="#">
-        <h1><img src="images/viz-logo-white.png" alt="Viz"
-          /></h1>
+        <h1><img src="images/viz-logo-white.png" alt="Viz" /></h1>
       </a>
 
       <section>
-	      <button aria-hidden="true">s</button>
+        <button aria-label="open">s</button>
         <p>Menu</p>
       </section>
 
-	    <nav>
-		    <button aria-label="close">v</button>
-		    <ul>
-			   <li>Manga & Books</li>
-			    <li>Anime</li>
-			    <li>Calender</li>
-			    <li>More</li>
-		    </ul>
+      <nav>
+        <button aria-label="close">v</button>
+        <ul>
+          <li>
+            <details>
+              <summary>Manga & Books</summary>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Anime</summary>
+            </details>
+          </li>
+          <li><a href="#">Calender</a></li>
+          <li>
+            <details>
+              <summary>More</summary>
+            </details>
+          </li>
+        </ul>
         <form action="">
-		      <input type="search">
+          <input type="search" placeholder="Author, title, character"/>
+          <button type="submit" aria-label="search">i</button>
         </form>
-		    <ul>
-			   <li>Manga & Anime Favorites</li>
-			   <li><a href="#">Naruto</a></li>
-			   <li><a href="#">Pokémon</a></li>
-			   <li><a href="#">Ito-verse</a></li>
-			   <li><a href="#">Bleach</a></li>
-			   <li><a href="#">Jujutsu Kaisen</a></li>
-			   <li><a href="#">One-Punch Man</a></li>
-			   <li><a href="#">Read Free Manga!</a></li>
-		    </ul>
-	   </nav>
+        <ul>
+          <li>Manga & Anime Favorites</li>
+          <li><a href="#">Naruto</a></li>
+          <li><a href="#">Pokémon</a></li>
+          <li><a href="#">Ito-verse</a></li>
+          <li><a href="#">Bleach</a></li>
+          <li><a href="#">Jujutsu Kaisen</a></li>
+          <li><a href="#">One-Punch Man</a></li>
+          <li><a href="#">Read Free Manga!</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -80,25 +92,27 @@
         <p>Welcome to the Ito-verse of cosmic horror.</p>
         <details>
           <summary>Junji Ito</summary>
-          <p>
+          <section>
+            <p>
             Junji Ito seamlessly weaves the unknowable into cosmic horrors that
             exceed the boundaries of manga. His works subvert the genre by
             bending, twisting, and blending it far beyond the familiar,
             resulting in the greatest chilling, thrilling, and grotesquely
             horrific storytelling of our time. Welcome to the Ito-verse.
-          </p>
-          <p>
-            Four-time Eisner Award-winning creator
-            <a href="#">Junji Ito</a> made his professional manga debut in 1987,
-            and since then has gone on to be recognized as one of the greatest
-            contemporary artists working in the horror genre. His titles include
-            Tomie and Uzumaki, which have been adapted into live-action films;
-            Gyo, which was adapted into an animated film; and his books Black
-            Paradox, Deserter, Fragments of Horror, Frankenstein, Lovesickness,
-            No Longer Human, Remina, Sensor, Shiver, Smashed, The Liminal Zone,
-            and Venus in the Blind Spot, all of which are available from VIZ
-            Media.
-          </p>
+            </p>
+            <p>
+              Four-time Eisner Award-winning creator
+              <a href="#">Junji Ito</a> made his professional manga debut in 1987,
+              and since then has gone on to be recognized as one of the greatest
+              contemporary artists working in the horror genre. His titles include
+              Tomie and Uzumaki, which have been adapted into live-action films;
+              Gyo, which was adapted into an animated film; and his books Black
+              Paradox, Deserter, Fragments of Horror, Frankenstein, Lovesickness,
+              No Longer Human, Remina, Sensor, Shiver, Smashed, The Liminal Zone,
+              and Venus in the Blind Spot, all of which are available from VIZ
+              Media.
+            </p>
+          </section>
         </details>
       </section>
       <section>
@@ -288,7 +302,7 @@
           </li>
         </ul>
         
-        <!-- heb dit van dlo -->
+        <!-- heb dit van de presentatie op dlo -->
         <picture><source media="(prefers-color-scheme:dark)" srcset="images/background-image-black.jpg" > 
          <img 
           aria-hidden="true"
@@ -303,6 +317,7 @@
 		<section>
 			<h2>Get the latest manga & anime news!</h2>
 			<p>You’ll never miss a beat when you subscribe to our newsletter.</p>
+      <img src="images/newsletter-image.png" alt="">
       <form action="">
 			  <input type="email" placeholder="Enter your email address">
 			  <button type="submit">Sign Up</button>

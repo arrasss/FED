@@ -164,6 +164,11 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 
 Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+<img src="readme-images/WCAG-pagina1.jpeg" width="375px" alt="uitomst WCAG">
+<img src="readme-images/WCAG-pagina2.jpeg" width="375px" alt="uitomst WCAG">
+<img src="readme-images/WCAG-pagina3.jpeg" width="375px" alt="uitomst WCAG">
+<img src="readme-images/WCAG-pagina4.jpeg" width="375px" alt="uitomst WCAG">
+<img src="readme-images/WCAG-pagina5.jpeg" width="375px" alt="uitomst WCAG">
 
 </details>
 
@@ -205,23 +210,29 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Je uitkomst - karakteristiek screenshots:
 
-  <img src="readme-images/WCAG-pagina1.jpeg" width="375px" alt="uitomst WCAG">
-    <img src="readme-images/WCAG-pagina2.jpeg" width="375px" alt="uitomst WCAG">
-      <img src="readme-images/WCAG-pagina3.jpeg" width="375px" alt="uitomst WCAG">
-        <img src="readme-images/WCAG-pagina4.jpeg" width="375px" alt="uitomst WCAG">
-          <img src="readme-images/WCAG-pagina5.jpeg" width="375px" alt="uitomst WCAG">
+  <img src="readme-images/screencapture-Mijnwebsite1.png" width="375px" alt="Screenshot mijn website">
+    <img src="readme-images/screencapture-Mijnwebsite2.png" width="375px" alt="Screenshot mijn website">
 
 ### Dit ging goed/Heb ik geleerd:
 
 Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/Screenshot-kaartjes.png" width="375px" alt="kaartjes van de website">
+  Ik vond dat dit goed was gegaan vooral omdat toen ik dit aan het typen was meerendeel begrijp
+
+  <img src="readme-images/Signup.png.png" width="375px" alt="screenshot van de footer">
+  Het plaatje gaat weg als de website small screen word en dat vind ik leuk omdat ik het alleen heb kunnen doen.
 
 ### Dit was lastig/Is niet gelukt:
 
 Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/Carousel.png" width="375px" alt="carousel van de website">
+  Ik vind dat dit een van de moeilijkste dingen is op mijn website. Ik heb hier veel tijd aan besteed en vond het aan het begin ook   heel moeilijk
+
+  <img src="readme-images/Screenshot-kaartjes2.png" width="375px" alt="Kaartjes van de website">
+  Ik vond dit ook moeilijk vooral omdat ik hier het meest aan heb gezeten naast de carousel. Het ging telkens niet goed vooral met het achtergrond plaatje.
+
 </details>
 
 ## Bronnenlijst
@@ -246,6 +257,6 @@ Nb. Vermeld de bronnen ook in je code.
 11. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display
 12. https://www.accessibility.nl/kennis/zo-zet-je-skiplinks-voor-een-optimale-navigatie
 13. https://youtu.be/287mLmuamoM?si=J-uLlU411qr1FlAX
-14. 
+14.
 
 </details>

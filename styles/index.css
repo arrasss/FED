@@ -36,7 +36,8 @@ section:nth-of-type(1) li:nth-of-type(1) {
   transition: 0.3s;
 }
 
-section:nth-of-type(1) li:nth-of-type(1):hover {
+section:nth-of-type(1) li:nth-of-type(1):hover,
+section:nth-of-type(1) li:nth-of-type(1) a:focus {
   background-color: var(--color-accent4);
   text-decoration: underline;
   border-radius: 0.3em;
@@ -80,7 +81,8 @@ section:nth-of-type(1) p a {
   color: var(--color-accent3);
 }
 
-section:nth-of-type(1) p a:hover {
+section:nth-of-type(1) p a:hover,
+section:nth-of-type(1) p a:focus {
   color: var(--color-accent5);
   text-decoration: underline;
 }
@@ -91,7 +93,8 @@ section:nth-of-type(1) a {
   color: var(--color-text);
 }
 
-section:nth-of-type(1) li a:hover {
+section:nth-of-type(1) li a:hover,
+section:nth-of-type(1) li a:focus {
   text-decoration: underline;
   color: var(--color-accent3);
 }
@@ -115,7 +118,8 @@ section details summary {
   list-style: none;
 }
 
-section details summary:hover {
+section details summary:hover,
+section details summary:focus {
   color: var(--color-accent3);
   text-decoration: underline;
 }
@@ -282,7 +286,9 @@ main section:nth-of-type(2) button {
 }
 
 main section:nth-of-type(2) a:hover,
-main section:nth-of-type(2) button:hover {
+main section:nth-of-type(2) button:hover,
+main section:nth-of-type(2) a:focus,
+main section:nth-of-type(2) button:focus {
   background-color: var(--color-accent5);
 }
 
@@ -301,20 +307,36 @@ section:nth-of-type(3) {
   padding: 5em 4.5% 3.75em 4.5%;
 
   display: grid;
-  grid-template-rows: max-content 20em max-content max-content max-content max-content max-content;
+  grid-template-rows: max-content max-content max-content max-content max-content;
+  grid-template-columns: 1fr;
 
   color: var(--color-text);
 }
 
+section:nth-of-type(3) section {
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  margin-top: 1em;
+
+  display: grid;
+  grid-template-rows: max-content max-content max-content max-content max-content;
+}
+
 section:nth-of-type(3) h2:nth-of-type(1),
-section:nth-of-type(3) h3 {
+section:nth-of-type(3) section h3 {
   font-family: "circular-thick";
   font-size: 1.75em;
 
   margin: 0;
 }
 
-section:nth-of-type(3) > a:nth-of-type(1) {
+section:nth-of-type(2) section h3 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+section:nth-of-type(3) section a:nth-of-type(1) {
   grid-row-start: 2;
   grid-row-end: 3;
 
@@ -322,22 +344,23 @@ section:nth-of-type(3) > a:nth-of-type(1) {
 
   background-color: var(--color-white);
 
+  padding: 0.5em 0 1.5em 0;
   margin: 1em 0 1em 0;
 }
 
-section:nth-of-type(3) > a img {
+section:nth-of-type(3) section a img {
   justify-self: center;
   align-self: center;
-  width: 11em;
+  width: 45%;
 
   transition: 0.5s;
 }
 
-section:nth-of-type(3) > a img:hover {
-  width: 11.5em;
+section:nth-of-type(3) section a img:hover {
+  width: 47%;
 }
 
-section:nth-of-type(3) > a:nth-of-type(2) {
+section:nth-of-type(3) section a:nth-of-type(2) {
   font-family: "Circular-thick";
   font-size: 1.25em;
   text-decoration: none;
@@ -350,7 +373,8 @@ section:nth-of-type(3) > a:nth-of-type(2) {
   margin: 0.5em 0 0 0.5em;
 }
 
-section:nth-of-type(3) a:nth-of-type(2):hover {
+section:nth-of-type(3) section a:nth-of-type(2):hover,
+section:nth-of-type(3) section a:nth-of-type(2):focus {
   background-color: var(--color-accent5);
 }
 
@@ -363,8 +387,8 @@ section:nth-of-type(3) h2:nth-of-type(2) {
 }
 
 section:nth-of-type(3) ul {
-  grid-row-start: 7;
-  grid-row-end: 8;
+  grid-row-start: 5;
+  grid-row-end: 6;
 
   padding-right: 1em;
 
@@ -410,7 +434,7 @@ section:nth-of-type(3) li:nth-of-type(2) a img:hover {
   width: 67%;
 }
 
-section:nth-of-type(3) li a h4 {
+section:nth-of-type(3) li a h3 {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
@@ -452,9 +476,13 @@ section:nth-of-type(3) > a:last-of-type {
   font-size: 1.25em;
   text-decoration: none;
   color: var(--color-text);
+
+  grid-row-start: 7;
+  grid-row-end: 8;
 }
 
-section:nth-of-type(3) > a:last-of-type:hover {
+section:nth-of-type(3) > a:last-of-type:hover,
+section:nth-of-type(3) > a:last-of-type:focus {
   color: var(--color-accent);
   text-decoration: underline;
 }
@@ -517,7 +545,8 @@ section:nth-of-type(4) a h3 {
   color: var(--color-background);
 }
 
-section:nth-of-type(4) li a:hover {
+section:nth-of-type(4) li a:hover,
+section:nth-of-type(4) li a:focus {
   background-color: var(--color-accent3);
 }
 
@@ -554,9 +583,121 @@ section:nth-of-type(4) picture img {
   }
 
   /****************/
+  /*   SECTION 2  */
+  /****************/
+  main section:nth-of-type(2) ul li {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: max-content 3em 5em;
+  }
+
+  section:nth-of-type(2) ul li h2 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    z-index: 1;
+    align-self: end;
+
+    padding: 0.5em 0 0.5em 1em;
+    margin: 0;
+
+    font-size: 1.75em;
+
+    /* Bron: Chatgpt - prompt "Ik heb een background-color: var(); in een h2 hoe voeg ik een opacity toe zonder de hele h2 te beinvloeden?"*/
+    background-color: color-mix(in srgb, var(--color-logo2) 75%, transparent);
+  }
+
+  section:nth-of-type(2) ul li p {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    z-index: 1;
+
+    margin: 0;
+
+    font-size: 1.25em;
+
+    background-color: color-mix(in srgb, var(--color-logo2) 75%, transparent);
+  }
+
+  main > section:nth-of-type(2) ul li section {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    z-index: 1;
+
+    padding-right: 1em;
+
+    font-size: 1.25em;
+
+    background-color: color-mix(in srgb, var(--color-logo2) 75%, transparent);
+  }
+
+  section:nth-of-type(2) ul li img {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+
+    width: 100vw;
+  }
+
+  main section:nth-of-type(2) ul {
+    &::scroll-button(*) {
+      font-size: 3em;
+    }
+  }
+
+  /****************/
   /*   SECTION 3  */
   /****************/
+  section:nth-of-type(3) h2:nth-of-type(1) {
+    font-size: 2.45em;
+  }
 
+  section:nth-of-type(3) section {
+    display: grid;
+    grid-template-columns: 40vw 50vw;
+    grid-template-rows: max-content max-content max-content;
+    gap: 0 2em;
+  }
+
+  section:nth-of-type(3) section h3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    font-size: 2.45em;
+  }
+
+  section:nth-of-type(3) section p {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    font-size: 1.25em;
+  }
+
+  section:nth-of-type(3) section a:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  section:nth-of-type(3) section a:last-of-type {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  /* Kaartjes */
   section:nth-of-type(3) ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
@@ -605,5 +746,37 @@ section:nth-of-type(4) picture img {
 
   section details section p:last-of-type {
     font-size: 1.25em;
+  }
+
+  /****************/
+  /*   SECTION 3  */
+  /****************/
+  section:nth-of-type(3) h2:nth-of-type(1) {
+    font-size: 3.5em;
+  }
+
+  section:nth-of-type(3) section h3 {
+    font-size: 3.5em;
+  }
+
+  section:nth-of-type(3) section p {
+    font-size: 1.75em;
+  }
+
+  section:nth-of-type(3) section a:last-of-type {
+    padding: 1em 0.5em 1em 0.5em;
+  }
+
+  /****************/
+  /*   SECTION 4  */
+  /****************/
+
+  section:nth-of-type(4) ul {
+    font-size: 1.75em;
+    margin: 0;
+  }
+
+  section:nth-of-type(4) a h3 {
+    padding: 0 0.5em 0 0.5em;
   }
 }

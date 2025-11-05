@@ -205,7 +205,11 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Je uitkomst - karakteristiek screenshots:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/WCAG-pagina1.jpeg" width="375px" alt="uitomst WCAG">
+    <img src="readme-images/WCAG-pagina2.jpeg" width="375px" alt="uitomst WCAG">
+      <img src="readme-images/WCAG-pagina3.jpeg" width="375px" alt="uitomst WCAG">
+        <img src="readme-images/WCAG-pagina4.jpeg" width="375px" alt="uitomst WCAG">
+          <img src="readme-images/WCAG-pagina5.jpeg" width="375px" alt="uitomst WCAG">
 
 ### Dit ging goed/Heb ik geleerd:
 
@@ -237,6 +241,11 @@ Nb. Vermeld de bronnen ook in je code.
 6. https://codepen.io/arrasss/pen/EaPWGLY?editors=1100
 7. https://codepen.io/arrasss/pen/dPGogqZ
 8. https://codepen.io/arrasss/pen/vENoqYO
-
+9. Bron: Chatgpt - prompt "Ik heb een background-color: var(); in een h2 hoe voeg ik een opacity toe zonder de hele h2 te beinvloeden?"
+10. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-hidden
+11. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display
+12. https://www.accessibility.nl/kennis/zo-zet-je-skiplinks-voor-een-optimale-navigatie
+13. https://youtu.be/287mLmuamoM?si=J-uLlU411qr1FlAX
+14. 
 
 </details>

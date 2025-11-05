@@ -96,6 +96,33 @@
 }
 
 /****************/
+/*   SKIP LINK  */
+/****************/
+
+/* bron: https://youtu.be/287mLmuamoM?si=J-uLlU411qr1FlAX en https://www.accessibility.nl/kennis/zo-zet-je-skiplinks-voor-een-optimale-navigatie */
+body > a {
+  position: absolute;
+  top: -5em;
+  left: 0;
+
+  font-family: "Circular-thick";
+  font-size: 1em;
+  background: var(--color-accent3);
+  color: var(--color-text3);
+
+  width: 100vw;
+  text-align: center;
+  padding: 1em 0 1em 0;
+}
+
+body > a:focus,
+body > a:focus-visible {
+  top: 0;
+
+  outline: var(--color-accent2);
+}
+
+/****************/
 /*   GENERAL    */
 /****************/
 
@@ -234,7 +261,8 @@ nav ul:nth-of-type(1) li {
   line-height: 2em;
 }
 
-nav ul:nth-of-type(1) li:hover {
+nav ul:nth-of-type(1) li:hover,
+nav ul:nth-of-type(1) li:focus {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -274,7 +302,8 @@ nav ul:nth-of-type(2) li a {
   text-decoration: none;
 }
 
-nav ul:nth-of-type(2) li a:hover {
+nav ul:nth-of-type(2) li a:hover,
+nav ul:nth-of-type(2) li a:focus {
   color: var(--color-accent4);
 }
 
@@ -472,7 +501,8 @@ footer form button {
   width: 30%;
 }
 
-footer form button:hover {
+footer form button:hover,
+footer form button:focus {
   background-color: var(--color-accent5);
 }
 
@@ -515,11 +545,73 @@ footer section:nth-of-type(2) ul:nth-of-type(1) li a {
   font-size: 1.25em;
 }
 
-footer section:nth-of-type(2) li a:hover {
+footer section:nth-of-type(2) li a:hover,
+footer section:nth-of-type(2) li a:focus {
   color: var(--color-text2-footer);
 }
 
 @media (min-width: 63rem) {
+  footer section:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 13% 43% 42%;
+    grid-template-rows: max-content max-content;
+    gap: 0 1em;
+
+    padding: 2em 2em 0 2em;
+
+    position: relative;
+  }
+
+  footer section:nth-of-type(1) h2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  footer section:nth-of-type(1) p {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    margin-bottom: 2em;
+  }
+
+  footer section:nth-of-type(1) img {
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display */
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: -1;
+  }
+
+  footer section:nth-of-type(1) form {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    align-items: center;
+
+    padding-left: 1em;
+
+    font-size: 1.25em;
+  }
+
+  footer section:nth-of-type(1) form input {
+    width: 70%;
+  }
+
+  footer section:nth-of-type(1) form button {
+    width: 25%;
+    padding: 0.7em 0.3em 0.7em 0.3em;
+  }
+
   footer section:nth-of-type(2) {
     display: grid;
     grid-template-columns: 20em 1fr;
